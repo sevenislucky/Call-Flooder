@@ -1,9 +1,14 @@
+''' Basic program to call someone infinite amount of times,
+	using the twilio website it is possible to have a programmed
+	voice to say what ever you like to the recipient, along with 
+	a recording if the conversation/response.
+''' 
 from twilio.rest import Client
 import time
 
-TWILIO_PHONE_NUMBER = ["Your Twilio Number goes here"]
+TWILIO_PHONE_NUMBER = ["Your Twilio Number goes here"] 
 
-DIAL_NUMBERS = ["The Number you want to call goes here"]
+DIAL_NUMBERS = ["The Number you want to call goes here"] # if you wish you can use multiple numbers "987654321","123456789"
 
 TWIML_INSTRUCTIONS_URL = "https://handler.twilio.com/twiml/EHc2796bac3a66e710bef128a917569e43"
 
